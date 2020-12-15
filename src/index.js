@@ -10,13 +10,7 @@ const mountedViews = new Set();
 
 function render(
   View,
-  {
-    el,
-    container,
-    baseElement = container,
-    autoRender = true,
-    ...options
-  } = {},
+  { container, baseElement = container, autoRender = true, ...options } = {},
 ) {
   // Match react-testing-library's baseElement/container approach exactly:
   if (!baseElement) {
@@ -26,7 +20,7 @@ function render(
     container = baseElement.appendChild(document.createElement('div'));
   }
   // if no el is supplied BB will create one in _ensureElement
-  const view = new View({ el, ...options });
+  const view = new View(options);
   container.appendChild(view.el);
 
   if (autoRender) {

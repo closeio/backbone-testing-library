@@ -1,8 +1,9 @@
 .git
-yarn.lock
-rollup*
 .babelrc
 .eslint*
-.prettierrc
 .gitignore
+.prettierrc
+jest.config.js
+rollup*
 src
+example

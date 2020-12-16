@@ -2,11 +2,21 @@
 [![NPM](https://img.shields.io/npm/v/@closeio/backbone-testing-library.svg)](https://www.npmjs.com/package/@closeio/backbone-testing-library)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-prettier-success)](https://prettier.io)
 
-DOM testing utilities for `Backbone` with an API that mirrors [React Testing Library](https://github.com/testing-library/react-testing-library).
+DOM testing utilities for [`Backbone`](https://backbonejs.org/) with an API that mirrors [`React Testing Library`](https://github.com/testing-library/react-testing-library).
 
 ### <img height="40px" src="https://close.com/static/img/close-logo-dark.svg" />
 
 Interested in working on projects like this? [Close](https://close.com) is looking for [great engineers](https://jobs.close.com) to join our team!
+
+## Why would you want this... It's nearly 2021!?
+
+At Close a large portion of our app is still written in `Backbone` and we're carefully
+transitioning this to `React`. We created this library as a way to write tests on our
+`Backbone` components in the style of `React Testing Library`. This means, as we port
+components over, we are able to use the same tests with very minimal changes and so
+minimize regressions in our app. While we wouldn't recommend building a brand new FE app
+with `Backbone`, we're open sourcing this to help anyone else looking to transition a
+legacy codebase.
 
 ## Installation
 
@@ -28,16 +38,6 @@ yarn add --dev @closeio/backbone-testing-library @testing-library/dom
 
 You may also be interested in installing `@testing-library/jest-dom` so you can
 use [the custom jest matchers](https://github.com/testing-library/jest-dom).
-
-## Why would you want this... It's nearly 2021!?
-
-At Close a large portion of our app is still written in `Backbone` and we're carefully
-transitioning this to `React`. We created this library as a way to write tests on our
-`Backbone` components in the style of `React Testing Library`. This means, as we port
-components over, we are able to use the same tests with very minimal changes and so
-minimize regressions in our app. While we wouldn't recommend building a brand new FE app
-with `Backbone`, we're open sourcing this to help anyone else looking to transition a
-legacy codebase.
 
 ## Example
 

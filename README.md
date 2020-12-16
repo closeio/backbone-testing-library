@@ -1,6 +1,12 @@
 # Backbone Testing Library
+[![NPM](https://img.shields.io/npm/v/@closeio/backbone-testing-library.svg)](https://www.npmjs.com/package/@closeio/backbone-testing-library)
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-prettier-success)](https://prettier.io)
 
 DOM testing utilities for `Backbone` with an API that mirrors [React Testing Library](https://github.com/testing-library/react-testing-library).
+
+### <img height="40px" src="https://close.com/static/img/close-logo-dark.svg" />
+
+Interested in working on projects like this? [Close](https://close.com) is looking for [great engineers](https://jobs.close.com) to join our team!
 
 ## Installation
 
@@ -168,3 +174,7 @@ The render method returns an object that has a few properties:
   you're not testing `remove`. While it might seem odd to rely on a ENV var from another
   library, our intention here is that this library is run in tandem with RTL and behaves
   identically for porting components.
+
+## License
+
+MIT © [Close](https://github.com/closeio)

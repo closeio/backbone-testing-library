@@ -2,6 +2,13 @@
   "name": "@closeio/backbone-testing-library",
   "version": "1.0.0",
   "description": "DOM testing utilities with API that mirrors React Testing Library",
+  "keywords": [
+    "Backbone",
+    "React",
+    "React Testing Library",
+    "DOM Testing Library",
+    "testing"
+  ],
   "author": "Lukáš Mladý <lukas@close.com>",
   "license": "MIT",
   "repository": "closeio/backbone-testing-library",
@@ -18,9 +25,10 @@
     "lint:eslint": "eslint --config .eslintrc",
     "lint:eslint:fix": "eslint --config .eslintrc --fix",
     "lint:js": "npm run lint:eslint -- . ",
-    "prettify": "prettier --write src/**",
+    "prettify": "prettier --write {example,src}/**",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "@testing-library/dom": ">=6.1.0"

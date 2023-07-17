@@ -39,7 +39,7 @@ function render(
     baseElement,
     debug: (debugEl = baseElement, maxLength, options) =>
       console.log(prettyDOM(debugEl, maxLength, options)),
-    unmount: () => cleanupView(view),
+    unmount: () => cleanupView({ view, container }),
     ...getQueriesForElement(baseElement),
   };
 }
